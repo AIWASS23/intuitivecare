@@ -21,3 +21,10 @@ python3 extrair_dados.py
 ```
 
 Isso salva os dados do pdf em uma tabela estruturada, em formato csv.
+
+## 3. TESTE DE BANCO DE DADOS
+
+Execute na raiz do projeto
+
+psql -h localhost -U marcelodearaujo -d care
+
