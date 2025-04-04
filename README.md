@@ -65,4 +65,22 @@ Para visualizar a interface em VUE entre na pasta operadora-search e execute
 npm run serve
 
 ```
+
+## 5. TESTE DE RAG
+
+Para criar uma RAG baixe o modelo
+
+```bash
+curl -L -o llama-2-7b-chat.Q4_K_M.gguf \             
+    https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF/resolve/main/llama-2-7b-chat.Q4_K_M.gguf
+
+```
+
+Depois execute
+
+```python
+python3 rag.py
+
+```
+
 Agradeço pela oportunidade
