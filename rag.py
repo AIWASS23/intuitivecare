@@ -16,8 +16,11 @@ db = FAISS.from_documents(documents, embeddings)
 llm = LlamaCpp(
     model_path = '/Users/marcelodearaujo/Desktop/IntuitiveCare/llama-2-7b-chat.Q4_K_M.gguf',
     n_ctx=4096,
-    n_gpu_layers=16 
-) 
+    n_gpu_layers=32, 
+    temperature=0.75,
+    max_tokens=500,
+    top_p=1,
+)
 
 # 4️⃣ Cria a cadeia de busca + geração (RAG)
 qa_chain = RetrievalQA.from_chain_type(
